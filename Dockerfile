@@ -6,3 +6,8 @@ LABEL "com.github.actions.name"="danger-swift-format"
 LABEL "com.github.actions.description"="Run swift-format with Danger"
 LABEL "com.github.actions.icon"="zap"
 LABEL "com.github.actions.color"="blue"
+
+ADD entrypoint2.sh /usr/local/bin/entrypoint2
+
+ENTRYPOINT [ "entrypoint2" ]
+CMD [ "ci" ]
