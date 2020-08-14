@@ -5,8 +5,7 @@ if [ $# -lt 1 ]; then
     exit 1
 fi
 
+swift-format lint -r ios-app share > report.txt 2>&1
 ls -la
-swift-format lint -r app > report.txt 2>&1
 more report.txt
-ls -la
 danger-swift $@
