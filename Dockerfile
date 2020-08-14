@@ -1,4 +1,4 @@
-FROM tokorom/danger-swift-format:latest
+FROM tokorom/danger-swift-format:5.2
 
 MAINTAINER tokorom
 
